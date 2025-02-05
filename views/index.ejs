@@ -1,0 +1,45 @@
+  <%- include("partials/header.ejs") %>
+  <body>
+    
+    <h1 class="title">Quote Finder</h1>
+    <main>
+      <div id="input-query">
+        <form action="/searchByKeyword">
+          <span class="items">Keyword:</span> 
+          <input type="text" id="keyword" name="keyword">
+          <button>Search</button>
+        </form>
+        <br>
+        <form action="/searchByAuthor">
+          <select id="author" name="author">
+            <% for (author of authors) { %>
+              <option value="<%=author.authorId%>">
+                <%= author.firstName %> <%= author.lastName %>
+              </option>
+            <% } %>     
+          </select>
+          <button>Search by Author</button>
+        </form>
+        <br>
+        <form action="/searchByCategory">
+          <select id="category" name="category">
+            <% for (category of categories) { %>
+              <option value="<%=category.category%>">
+                <%= category.category %>
+              </option>
+            <% } %>     
+          </select>
+          <button>Search by Category</button>
+        </form>
+        <br>
+        <form action="/searchByLikes">
+         <span class="items">Number of likes:</span> 
+         <input type="number" id="likesNum" name="likesNum">
+         <button>Search</button>
+        </form>
+      </div>
+    </main>
+    <%- include("partials/footer.ejs") %>
+  
+  </body>
+</html>

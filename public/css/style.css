@@ -1,0 +1,166 @@
+html {
+  width: 800px;
+  height: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+}
+body {
+  text-align: left;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left-margin: auto;
+  right-margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: wheat;
+}
+main {
+  max-height: 600px;
+  overflow-y: auto;
+}
+.title {
+  width: inherit;
+  height: 50px;
+  text-align: center;
+  background-color: darkblue;
+  font-size: 35px;
+  color: white;
+}
+#input-query {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.items {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkblue;
+}
+#keyword {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 16px;
+}
+#author {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 16px;
+}
+#category {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 16px;
+}
+#likesNum {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 16px;
+}
+button {
+  background-color: darkblue;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blue;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 18px;
+  font-weight: bold;
+  color: wheat;
+}
+#author-quote-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: blue;
+}
+#quotes {
+  font-size: 18px;
+}
+.author-sig {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+#quote {
+  font-size: 19px;
+  font-weight: bold;
+  color: goldenrod;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#likes, #category-result {
+  font-size: 14px;
+  color: black;
+}
+#authorModal {
+  text-align: center;
+  padding-right: 13.5%;
+}
+.modal-content {
+  width: 750px;
+  height: fit-content;
+  max-height: 700px;
+  overflow-y: auto;
+}
+#author-name {
+  color: blue;
+  font-weight: bolder;
+}
+#gender {
+  width: 30px;
+  height: auto;
+}
+h4 {
+  font-size: 26px;
+  color: darkblue;
+}
+h5 {
+  font-size: 20px;
+  color: darkblue;
+}
+#bio {
+  text-align: left;
+  font-size: 18px;
+}
+#back {
+  height: 10px;
+}
+.close {
+    background-color: darkblue;
+    border-radius: 5px;
+    border: 2px solid darkblue;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.close:hover {
+  background-color: blue;
+  border-radius: 5px;
+  border: 2px solid darkblue;
+  font-size: 18px;
+  font-weight: bold;
+  color: wheat;
+}
+footer {
+  width: inherit;
+  background-color: darkblue;
+  text-align: center;
+  color: white;
+}
